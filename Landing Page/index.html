@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <section id="home" class="main">
+    <header>
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Starbucks Logo">
+      </a>
+      <button class="hamburger" onclick="toggleNavbar()">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#whats-new">What's New</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Coffee<br>It's <span class="starbucks-text">Starbucks</span></h2>
+        <p>Experience the perfect blend of premium coffee and innovative flavors. Each cup is crafted with passion and expertise to bring you an unforgettable coffee experience.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="images/img1.png" class="starbucks">
+      </div>
+    </div>
+
+    <ul class="thumb">
+      <li><img src="images/img1.png" onclick="imgSlider(this.src); changeCircleColor('#017143'); changeTextColor('#ffffff')"></li>
+      <li><img src="images/img2.png" onclick="imgSlider(this.src); changeCircleColor('#eb7495'); changeTextColor('#ffffff')"></li>
+      <li><img src="images/img2.2.png" onclick="imgSlider(this.src); changeCircleColor('#d752b1'); changeTextColor('#ffffff')"></li>
+    </ul>
+  </section>
+
+  <section id="about" class="page-section">
+    <h2>About Starbucks</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/mumbai-store.jpg" alt="Starbucks Store Mumbai">
+      </div>
+      <div class="about-content">
+        <h3>Our Heritage</h3>
+        <p>Every day, we go to work hoping to do two things: share great coffee with our friends and help make the world a little better. It was true when the first Starbucks opened in 1971, and it's just as true today.</p>
+        <h3>Our Mission</h3>
+        <p>To inspire and nurture the human spirit – one person, one cup and one neighborhood at a time.</p>
+        <h3>Our Values</h3>
+        <ul>
+          <li>Creating a culture of warmth and belonging</li>
+          <li>Acting with courage, challenging the status quo</li>
+          <li>Being present, connecting with transparency, dignity and respect</li>
+          <li>Delivering our very best in all we do</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="page-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+            <h3>Hot Coffees</h3>
+            <div class="menu-list">
+                <div class="menu-product">
+                    <img src="images/img3.png">
+                    <p>Caffè Americano</p>
+                    <span>₹329</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img4.png">
+                    <p>Cappuccino</p>
+                    <span>₹369</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img5.png">
+                    <p>Flat White</p>
+                    <span>₹395</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+            <h3>Cold Drinks</h3>
+            <div class="menu-list">
+                <div class="menu-product">
+                    <img src="images/img6.png">
+                    <p>Iced Coffee</p>
+                    <span>₹329</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img7.png">
+                    <p>Cold Brew</p>
+                    <span>₹369</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img8.png">
+                    <p>Nitro Cold Brew</p>
+                    <span>₹409</span>
+                  </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="300">
+            <h3>Frappuccino Blended</h3>
+            <div class="menu-list">
+                <div class="menu-product">
+                    <img src="images/img9.png">
+                    <p lang="en">Caramel Frappuccino</p>
+                    <span>₹449</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img10.png">
+                    <p lang="en">Mocha Frappuccino</p>
+                    <span>₹449</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img11.png">
+                    <p lang="en">Java Chip Frappuccino</p>
+                    <span>₹495</span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-aos="fade-up" data-aos-delay="400">
+            <h3>Hot Teas</h3>
+            <div class="menu-list">
+                <div class="menu-product">
+                    <img src="images/img12.png">
+                    <p>Chai Tea Latte</p>
+                    <span>₹369</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img3.png">
+                    <p>Earl Grey Tea</p>
+                    <span>₹245</span>
+                </div>
+                <div class="menu-product">
+                    <img src="images/img3.png">
+                    <p>Green Tea Latte</p>
+                    <span>₹369</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="whats-new" class="page-section">
+    <h2>What's New</h2>
+    <div class="news-container">
+      <div class="news-item" data-aos="fade-right">
+        <img src="images/img16.png" alt="Fall Specials">
+        <h3>Fall Season Specials</h3>
+        <p>Try our new Pumpkin Cream Cold Brew and Maple Pecan Latte!</p>
+      </div>
+      <div class="news-item" data-aos="fade-left">
+        <img src="images/img15.png" alt="Rewards Program">
+        <h3>Rewards Program</h3>
+        <p>Join now and get free drinks with every 150 stars!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="page-section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-image">
+        <img src="images/mumbai-store.jpg" alt="Starbucks Store Mumbai">
+      </div>
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Email: customercare@tatastarbucks.com</p>
+        <p>Phone: 1800-102-7382 (Toll-Free)</p>
+        <p>Address: Starbucks, Ground Floor, Phoenix Marketcity, LBS Marg, Kurla West, Mumbai, Maharashtra 400070</p>
+      </div>
+      <form class="contact-form" onsubmit="return showThankYouMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn animate-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="cart" class="page-section">
+    <h2>Your Cart</h2>
+    <div class="cart-container">
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+        <div class="empty-cart-message">
+          <img src="images/empty-cart.png" alt="Empty Cart" style="width: 50px; height: auto;">
+          <p>Your cart is empty</p>
+          <a href="#menu" class="btn">Browse Menu</a>
+        </div>
+      </div>  
+      <div class="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax (18% GST)</span>
+            <span>₹0.00</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>₹0.00</span>
+          </div>
+        </div>
+        <button class="btn checkout-btn animate-btn" disabled>Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h3>Thank You! 🎉</h3>
+      <p>Your message has been sent successfully.</p>
+      <button onclick="closePopup()" class="btn">Close</button>
+    </div>
+  </div>
+
+  <div id="order-popup" class="popup">
+    <div class="popup-content">
+        <h3>Order Placed Successfully! 🎉</h3>
+        <p>Thank you for your order. Your coffee will be ready soon!</p>
+        <button onclick="closeOrderPopup()" class="btn animate-btn">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Starbucks. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
+  <script src="script.js"></script>
+  <script>
+    function toggleNavbar() {
+        console.log("Hamburger clicked!"); // Debugging line
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
